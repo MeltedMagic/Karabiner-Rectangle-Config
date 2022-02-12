@@ -1,0 +1,420 @@
+{
+  "title": "Keypad for Rectangle Window Snapping",
+  "rules": [
+    {
+      "description": "Enable Num Lock Toggle",
+      "manipulators": [
+        {
+          "description": "Set Numlock",
+          "from": {
+            "key_code": "keypad_num_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "Num Lock",
+                "value": 1
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "Num Lock",
+              "value": 0
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "description": "Unset Numlock",
+          "from": {
+            "key_code": "keypad_num_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "Num Lock",
+                "value": 0
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 0
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Numpad Keys",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "keypad_0",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "e",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_period",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_1",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_2",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_3",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "g",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_4",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_5",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "period",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_6",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_7",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_8",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_9",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_plus",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+		{
+          "from": {
+            "key_code": "keypad_enter",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter",
+			  "modifiers": [
+				  "left_control",
+				  "left_alt"
+			  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "Num Lock",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
