@@ -11,7 +11,7 @@ When I find the person who made this, I'll add them in.
 [Rectangle]("https://rectangleapp.com")
 
 ## Install
-1. Add key.json to `.config/karabiner/assets/complex_modifications/`
+1. Add key.json to `~/.config/karabiner/assets/complex_modifications/`
 2. Enable in Karabiner-Elements under 'Complex Modifications'
 
 ## Note
