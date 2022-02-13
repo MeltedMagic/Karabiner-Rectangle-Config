@@ -8,9 +8,9 @@ https://ke-complex-modifications.pqrs.org/#numpad
 When I find the person who made this, I'll add them in.
 
 ## Software
-[Karabiner-Elements]("https://karabiner-elements.pqrs.org")
+[Karabiner-Elements](https://karabiner-elements.pqrs.org)
 
-[Rectangle]("https://rectangleapp.com")
+[Rectangle](https://rectangleapp.com)
 
 ## Install
 1. Add key.json to `~/.config/karabiner/assets/complex_modifications/`
